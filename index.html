@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Voce é estrangeiro?</h1>
+<h2>Digite o nome do seu pais</h2>
+<input type="text" id="txn1">
+<input type="button"value="verificar"onclick="verificar()" >
+<div id="res">
+
+
+</div>
+
+
+<script>
+function verificar(){
+var txn1 = document.getElementById('txn1')
+var pais=txn1.value
+var res =window.document.querySelector("div#res")
+res.innerHTML = 'Voce mora no, '+pais
+if (pais==='Brasil'){
+res.innerHTML+= "<p>Voce é Brasileiro</p>"
+
+
+}
+
+else{
+res.innerHTML+='<p>Voce é estrangeiro</p>'
+}
+
+
+
+}
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
